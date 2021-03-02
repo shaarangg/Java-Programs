@@ -1,33 +1,36 @@
 import java.util.Scanner;
-public class strings {
-    public static void main(String[] args) {
+public class strings 
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the string");
-        String s1 = sc.nextLine();
-        System.out.println("Enter the string you want to compare with");
-        String s2 = sc.nextLine();
-        if(s1.compareTo(s2)>0){
-            System.out.println(s1+" is greater than "+s2);
-        }
-        else if(s1.compareTo(s2)==0){
-            System.out.println(s1+" is equal to "+s2);
-        }
-        else{
-            System.out.println(s1+" is less than "+s2);
-        }        
-        System.out.println("Enter the position");
+        StringBuffer s = new StringBuffer();
+        System.out.println("Enter a string");
+        s.append(sc.next());
+        System.out.println("Select an option: \n1. Append a string\n2. Insert a string\n3. Delete a portion of string");
         int n = sc.nextInt();
-        System.out.println("Character at "+n+" positon is "+s1.charAt(n-1));
-        System.out.println("Enter the positions to take out the substring");
-        int a1 = sc.nextInt();
-        int a2 = sc.nextInt();
-        System.out.println(s1.substring(a1,a2+1));
-        System.out.println("Enter the character to replace");
-        char ch = sc.next().charAt(0);
-        System.out.println("Enter the character to replace to");
-        char ch1 = sc.next().charAt(0);
-        s1=s1.replace(ch, ch1);
-        System.out.println("String after replace is done "+s1);
+        switch(n)
+        {
+            case 1:
+                System.out.println("Enter the string you want to append");
+                s.append(" "+sc.next());
+                break;
+            case 2:
+                System.out.println("Enter the string you want to insert");
+                String a = sc.next();
+                System.out.println("Enter the position you want to insert the string");
+                s.insert(sc.nextInt(),a);
+                break;
+            case 3:
+                System.out.println("Enter the positons of the portion you want to delete from the string");
+                int p1 = sc.nextInt();
+                int p2 = sc.nextInt();
+                s.delete(p1-1, p2);
+                break;
+            default:
+                System.out.println("Wrong Input");
+        }
+        System.out.println("String after performing the "+n+" operation is "+s);
         sc.close();
     }
 }

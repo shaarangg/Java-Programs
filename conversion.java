@@ -1,28 +1,31 @@
 import java.util.*;
 public class conversion {
     public void binary(int x){
-        String s="";
+        StringBuilder s= new StringBuilder();
         while(x>0){
-            s = Integer.toString(x%2) + s;
+            s.append(x%2);
             x/=2;
         }
+        s.reverse();
         System.out.println("Binary : "+s);   
     }
     public void oct(int x) {
-        String s="";
+        StringBuilder s= new StringBuilder();
         while(x>0){
-            s = Integer.toString(x%8) + s;
+            s.append(x%8);
             x/=8;
         }
+        s.reverse();
         System.out.println("Octal : "+s);
     }
     public void hex(int x) {
-        char a[] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-        String s="";
+        char[] a = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+        StringBuilder s= new StringBuilder();
         while(x>0){
-            s = a[x%16] + s;
+            s = s.append(a[x%16]);
             x/=16;
         }
+        s.reverse();
         System.out.println("Hexadecimal : "+s);
     }
     public static void main(String[] args){

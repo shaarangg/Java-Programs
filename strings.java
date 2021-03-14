@@ -3,6 +3,7 @@ public class strings
 {
     public static void main(String[] args)
     {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         StringBuffer s = new StringBuffer();
         System.out.println("Enter a string");

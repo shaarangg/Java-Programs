@@ -29,6 +29,7 @@ public class conversion {
         System.out.println("Hexadecimal : "+s);
     }
     public static void main(String[] args){
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
         int n = sc.nextInt();

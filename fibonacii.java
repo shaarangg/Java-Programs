@@ -1,10 +1,11 @@
 import java.util.Scanner;
 public class fibonacii {
     public static void main(String[] args) {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
         int n = sc.nextInt();
-        int a[] = new int[n];
+        int[] a = new int[n];
         a[0]=0;
         a[1]=1;
         for(int i =0; i<n; i++)

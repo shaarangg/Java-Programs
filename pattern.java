@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class pattern {
-    public static void main(String args[]){
+    public static void main(String[] args){
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter\n1. First Patter\n2.Second Pattern");
         int choice = sc.nextInt();

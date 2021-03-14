@@ -1,11 +1,12 @@
 import java.util.Scanner;
 public class bubblesort {
     public static void main(String[] args) {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the array");
         int l = sc.nextInt();
         System.out.println("Enter the elements of the array");
-        int a[] = new int[l];
+        int[] a = new int[l];
         for(int i=0; i<l; i++){
             a[i] = sc.nextInt();
         }

@@ -1,11 +1,12 @@
 import java.util.Scanner;
 public class binarysearch {
     public static void main(String[] args) {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the array");
         int n = sc.nextInt();
         System.out.println("Enter the elements in the array");
-        int a[] = new int[n];
+        int[] a = new int[n];
         for(int i =0; i<n; i++){
             a[i] = sc.nextInt();
         }

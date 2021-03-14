@@ -3,6 +3,7 @@ public class stringfunc
 {
     public static void main(String[] args)
     {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         System.out.println("Select an option: \n1. Compare two strings\n2. Get character at specified position\n3. Extract a substring\n4. Replace a character with the given character\n5. Get the position of a specified substring/character");
         int n = sc.nextInt();

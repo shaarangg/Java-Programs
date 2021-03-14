@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class changecase {
     public static void main(String[] args) {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         int a;

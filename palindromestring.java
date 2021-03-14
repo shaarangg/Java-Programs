@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class palindromestring {
     public static void main(String[] args) {
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         StringBuffer s1 = new StringBuffer();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string");

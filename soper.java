@@ -30,6 +30,7 @@ public class soper {
         return ch;
     }
     public static void main(String[] args){
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc  =new Scanner(System.in);
         soper obj = new soper();
         String s1 = sc.nextLine();

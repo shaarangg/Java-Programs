@@ -1,6 +1,7 @@
 import java.util.*;
 public class multiplication {
-    public static void main(String args[]){
+    public static void main(String[] args){
+        System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc  = new Scanner(System.in);
         int n;
         System.out.println("Enter the number who's multiplication table you want");

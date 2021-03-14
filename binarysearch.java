@@ -31,10 +31,10 @@ public class binarysearch {
             if(b>a[mid]){
                 l=mid+1;
             }
-            else if(b<a[mid]){
+            if(b<a[mid]){
                 u = mid-1;
             }
-            else{
+            if(b==a[mid]){
                 System.out.println("Element is at "+(mid+1) + " position" );
                 f=1;
                 break;

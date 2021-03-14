@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class bubblesort {
+class bubblesort {
     public static void main(String[] args) {
         System.out.println("Shaarang Singh\n19BCT0215\n");
         Scanner sc = new Scanner(System.in);

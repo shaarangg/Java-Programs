@@ -40,5 +40,4 @@ public class soper {
         System.out.println("Most frequent character = "+obj.mostFrequent(s1));
         sc.close();
     }
-    
 }

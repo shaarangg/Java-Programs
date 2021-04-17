@@ -1,7 +1,9 @@
 public class test {
+    void display(){
+        System.out.println("Hello World!");
+    }
     public static void main(String[] args){
-        String s = "Heloo";
-        s = "heloo"+"world";
-        System.out.println(s);
+        test obj = new test();
+        obj.display();
     }
 }

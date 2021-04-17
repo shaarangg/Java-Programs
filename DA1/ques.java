@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 interface Anagram
 {
     void CheckAnagram(String a, String b);
@@ -32,7 +32,7 @@ class demo implements Anagram
         }
     }
 }
-public class Cat{
+public class ques{
     public static void main(String[] args)
     {
         System.out.println("SHAARANG SINGH\n19BCT0215");

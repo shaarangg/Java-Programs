@@ -9,7 +9,7 @@ class TouristSpot{
     }
 }
 class cat2{
-    public void find(List<TouristSpot> a)
+    public void find(ArrayList<TouristSpot> a)
     {
         TouristSpot ts,ts1;
         ArrayList<String> s= new ArrayList<>();

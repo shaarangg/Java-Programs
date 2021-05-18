@@ -31,7 +31,7 @@ class libranian{
     {
         for(Integer i : shelf.keySet())
         {
-            System.out.println("Books in Rack-"+i.intValue());
+            System.out.println("Books in Rack-"+i);
             ArrayList<Book> temp = shelf.get(i);
             for(Book j : temp)
             {
@@ -71,6 +71,10 @@ class libranian{
                 rno++;
             }
         }
+        if(!book.isEmpty())
+        {
+            shelf.put(rno, book);
+        }
         System.out.println("Enter the name of the book you want to search");
         name = sc.nextLine();
         int ch = obj.search(name, shelf);
@@ -79,7 +83,7 @@ class libranian{
             System.out.println("Book not present");
         }
         else{
-            System.out.println("Rack Number: "+ch);
+            System.out.println("Book present in rack number: "+ch);
         }
         obj.sort(shelf);
         sc.close();
